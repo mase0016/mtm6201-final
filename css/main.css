@@ -532,6 +532,14 @@ body {
         padding-top: 15px;
     }
 
+    .navbar-toggler {
+    border: none;
+    }
+
+    .navbar-toggler:focus {
+    box-shadow: none;
+    }
+
     /* Styles the Sign In / Join Now buttons on mobile */
     .auth-buttons {
     display: flex; /* Add this line */
@@ -539,5 +547,42 @@ body {
     padding: 15px 0;
     border-top: 1px solid #eee;
     /* margin-top: 1px; */
+    }
+
+/*--------------------------------------------------------------
+# Animated Hamburger Icon
+--------------------------------------------------------------*/
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Style for the three lines (bars) of the hamburger icon */
+.navbar-toggler .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Rotate the top bar */
+.navbar-toggler:not(.collapsed) .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+/* Fade out the middle bar */
+.navbar-toggler:not(.collapsed) .bar:nth-child(2) {
+    opacity: 0;
+}
+
+/* Rotate the bottom bar */
+.navbar-toggler:not(.collapsed) .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 }
