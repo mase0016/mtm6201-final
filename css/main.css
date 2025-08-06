@@ -1,0 +1,414 @@
+/* #hero-home {
+  background-image: url(../images/burner-desktop.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #999;
+}
+
+#hero .d-flex {
+  height: 70vh;
+} */
+
+/*--------------------------------------------------------------
+# General & Variables
+--------------------------------------------------------------*/
+:root {
+  --primary-color: #007C91; /* Example Blue, adjust to your exact brand color */
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --testimonial-bg: #007C91;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.page-header {
+    background-color: var(--light-color);
+    padding: 4rem 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation Link States (Active & Hover)
+--------------------------------------------------------------*/
+
+/* This is the style for the link of the page you are currently on */
+.navbar .nav-link.active {
+  color: #007C91; /* This sets the text color to blue */
+   font-weight: bold; /* This makes the active link bold */
+}
+
+/* This is the style for when you move your mouse over any nav link */
+.navbar .nav-link:hover {
+  color: #007C91; /* This sets the text color to blue on hover */
+   font-weight: bold; /* This makes the active link bold */
+  text-decoration: underline; /* This adds the underline on hover */
+  text-underline-offset: 5px; /* Optional: Adds a little space between the text and the line */
+}
+/*--------------------------------------------------------------
+# Hero Sections
+--------------------------------------------------------------*/
+#hero-home {
+    background: linear-gradient(rgba(255, 255, 255, 0.147), rgba(255, 255, 255, 0.179)), url('../images/home_burner_photo.jpg') no-repeat center center/cover;
+    padding: 15rem 0;
+}
+
+#hero-membership {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/membership-hero-bg.jpg') no-repeat center center/cover;
+    padding: 6rem 0;
+}
+
+/*--------------------------------------------------------------
+# Featured Programs Section
+--------------------------------------------------------------*/
+#featured-programs {
+    background-color: #fff; /* Ensures the main section background is white */
+}
+
+.program-card {
+    background-color: #F5F5F5; /* Light grey background for the card */
+    border: 1px solid #E5E5E5; /* Subtle border */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Custom button style to match the green outline in your photo */
+.btn-outline-green {
+    --custom-green: #8AC926; /* Define the green color */
+    color: #000000;
+    border-color: var(--custom-green);
+    font-weight: 500;
+}
+
+.btn-outline-green:hover {
+    color: #000000;
+    background-color: var(--custom-green);
+    border-color: var(--custom-green);
+}
+
+/*--------------------------------------------------------------
+# Testimonial & CTA Sections
+--------------------------------------------------------------*/
+#testimonial {
+    background-color: var(--testimonial-bg);
+}
+
+#cta {
+    background-color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Pricing Cards
+--------------------------------------------------------------*/
+.pricing-card {
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+.pricing-card .card-header {
+    background-color: var(--light-color);
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem;
+}
+.pricing-card ul li {
+    padding-bottom: 1rem;
+}
+
+.card-popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.card-popular .card-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-bottom: 1px solid var(--primary-color);
+}
+.card-popular::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
+.footer-link {
+    color: rgba(255, 255, 255, 0.5); /* Sets the link color to the same as the text */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff; /* Makes the link brighter on hover */
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Footer Custom Background
+--------------------------------------------------------------*/
+.site-footer {
+    background-color: #333333;
+}
+
+/*--------------------------------------------------------------
+# Programs Page Styles (Updated & New)
+--------------------------------------------------------------*/
+
+/* Hero section for Programs page */
+#hero-programs {
+  background:url('../images/programs_photo.jpg') no-repeat center center/cover;
+  padding: 7rem 0;
+}
+
+/*--------------------------------------------------------------
+# Custom Dropdown Filter
+--------------------------------------------------------------*/
+.dropdown-menu {
+    width: 100%; /* Make the menu match the button width */
+    padding: 0;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.dropdown-header {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-item {
+    color: #007C91; /* The specific teal color */
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #A3A3A3; /* Separator line */
+    font-weight: 500;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none; /* Remove line from the last item */
+}
+
+.dropdown-item:hover {
+    background-color: #8ac926c9;
+    color: #007C91;
+}
+
+/* Filters bar styling */
+#filters {
+  background-color: #f8f9fa; /* Light grey background */
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Main section with background image */
+#program-listing-section {
+  background:linear-gradient(rgba(243, 239, 239, 0.152), rgba(243, 239, 239, 0.152)), url('../images/dhats.jpg') no-repeat center center/cover;
+  background-attachment: fixed; /* Optional: Creates a parallax effect */
+}
+
+/*--------------------------------------------------------------
+# Program Listing Section (Revised)
+--------------------------------------------------------------*/
+
+/* Update card style for sharper corners */
+.program-item.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  border-radius: none; /* Reduced for a sharper look */
+}
+
+/* Sharper corners for badges */
+.program-badge {
+    border-radius: 3px; /* Sharper corners */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #c03737;
+}
+
+/* Sharper corners for the info card on the right */
+.program-info-card {
+    background-color: var(--testimonial-teal, #007C91);
+    border-radius: none; /* Sharper corners to match */
+}
+
+/* Custom button styles to match the image */
+.btn-join {
+    background-color: #8AC926; /* A shade of yellow-green */
+    color: #fff;
+    font-weight: 500;
+    border: #fff;
+    border-radius: 3px; /* Sharper corners */
+}
+.btn-join:hover {
+    background-color: #fff; /* Darker green on hover */
+    color: #000000;
+    border: #007C91;
+}
+
+.btn-register {
+    background-color: #8AC926; /* Standard primary blue */
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px; /* Sharper corners */
+}
+.btn-register:hover {
+    background-color: #fff; /* Darker blue on hover */
+    color: #000000;
+}
+
+/*--------------------------------------------------------------
+# Membership Plans Section (Revised)
+--------------------------------------------------------------*/
+#membership-plans {
+    background-color: #6c9ccd;
+}
+
+.pricing-card {
+    border: 1px solid #8AC926;
+    border-radius: 0.5rem; /* Slightly larger radius */
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.pricing-card .card-header {
+    background: none;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.pricing-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Added a card-footer for better button alignment */
+.pricing-card .card-footer {
+    background: none;
+    border: none;
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+/* .pricing-card ul {
+    padding-left: 0.5rem; /* Aligns list with heading */
+} */
+
+.pricing-card ul li {
+    padding-bottom: 1rem;
+    color: #495057; /* Dark grey text for features */
+}
+
+.pricing-card ul .fa-check {
+    color: #000000; /* Green checkmark */
+}
+
+/* Styles for the "Most Popular" card */
+.card-popular {
+    background-color: #81bbc1; /* More precise teal/green */
+    color: #fff;
+    border: none;
+    transform: scale(1.02); /* Subtle pop effect */
+    z-index: 10;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-popular ul .fa-check,
+.card-popular ul li {
+    color: #000000;
+}
+
+/* Custom Button Styles */
+.btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.375rem;
+}
+
+.btn-choose-basic,
+.btn-choose-premium {
+    background-color: #f8f9fa; /* Light off-white */
+    border-color: #8AC926; /* Light grey border */
+    color: #8AC926;
+}
+
+.btn-choose-basic:hover,
+.btn-choose-premium:hover {
+    background-color: #8AC926;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-choose-standard {
+    background-color: #007C91; /* Darker teal for the button */
+    border-color: #ffffff;
+    color: #fff;
+}
+
+.btn-choose-standard:hover {
+    background-color: #ffffff; /* Even darker on hover */
+    border-color: #007C91;
+    color: #000000;
+}
+
+/*--------------------------------------------------------------
+# Member Benefits Section
+--------------------------------------------------------------*/
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;       /* Sets the width of the box */
+  height: 50px;      /* Sets the height of the box */
+  flex-shrink: 0;    /* Prevents the box from shrinking */
+  background-color: var(--testimonial-teal, #0d828e); /* Using the same teal color */
+  color: #fff;        /* Makes the icon white */
+  border-radius: 0.5rem; /* Creates the rounded corners */
+  font-size: 1.5rem;   /* Sets the size of the icon inside */
+}
+
+.benefit-icon + div h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# CTA (Call to Action) Section
+--------------------------------------------------------------*/
+#cta {
+  background-color: var(--testimonial-teal, #0d828e); /* Uses the same teal color */
+}
+
+
+#cta .btn-light {
+    padding: 0.8rem 2.5rem; /* Make button wider */
+    font-weight: 700;
+    color: #000000;
+}
