@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Programs - Active Life Centre</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo-active-life-centre.png" alt="Active Life Centre Logo" style="height: 40px;"> 
+                    <img src="images/logo-active-life-centre.png" alt="Active Life Centre Logo" style="height: 40px;">
                 </a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button> -->
+                </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -27,8 +28,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="nav-link me-3">Sign In</a>
+                    <div class="d-flex align-items-center auth-buttons">
+                        <a href="#" class="btn btn-outline-gray me-3">Sign In</a>
                         <a href="membership.html" class="btn btn-choose-standard me-3">Join Now</a>
                     </div>
                 </div>
@@ -38,154 +39,147 @@
 
     <main>
         <section id="hero-programs" class="d-flex align-items-center text-center">
-    <div class="container" style="margin-bottom: 3rem;">
-        <h1 class="display-4 fw-bold text-dark">Our Programs</h1>
-        <p class="lead fw-bold text-white">Find the perfect program for your fitness goals</p>
-    </div>
-</section>
+            <div class="container" style="margin-bottom: 3rem;">
+                <h1 class="display-4 fw-bold text-dark">Our Programs</h1>
+                <p class="lead fw-bold text-white">Find the perfect program for your fitness goals</p>
+            </div>
+        </section>
 
         <section id="filters" class="py-3">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-3 mb-2 mb-md-0">
-                <div class="dropdown">
-                    <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        All Programs
-                        <i class="fas fa-chevron-down fa-xs"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Basketball</a>
-                        <a class="dropdown-item" href="#">Aqua Fitness</a>
-                        <a class="dropdown-item" href="#">Strength Training</a>
-                        <a class="dropdown-item" href="#">Yoga</a>
-                        <a class="dropdown-item" href="#">Football</a>
-                        <a class="dropdown-item" href="#">Table Tennis</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <div class="dropdown">
+                            <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                All Programs
+                                <i class="fas fa-chevron-down fa-xs"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Basketball</a>
+                                <a class="dropdown-item" href="#">Aqua Fitness</a>
+                                <a class="dropdown-item" href="#">Strength Training</a>
+                                <a class="dropdown-item" href="#">Yoga</a>
+                                <a class="dropdown-item" href="#">Football</a>
+                                <a class="dropdown-item" href="#">Table Tennis</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-2 mb-md-0">
+                        <div class="dropdown">
+                            <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                All Ages
+                                <i class="fas fa-chevron-down fa-xs"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">18-30</a>
+                                <a class="dropdown-item" href="#">30-50</a>
+                                <a class="dropdown-item" href="#">55+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-2 mb-md-0">
+                        <div class="dropdown">
+                            <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                All Categories
+                                <i class="fas fa-chevron-down fa-xs"></i>
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-2 mb-2 mb-md-0">
-                 <div class="dropdown">
-                    <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        All Ages
-                        <i class="fas fa-chevron-down fa-xs"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">18-30</a> 
-                        <a class="dropdown-item" href="#">30-50</a> 
-                        <a class="dropdown-item" href="#">55+</a> 
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 mb-2 mb-md-0">
-                 <div class="dropdown">
-                    <button class="btn btn-light border w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        All Categories
-                        <i class="fas fa-chevron-down fa-xs"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                        
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <section id="program-listing-section" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="program-item card mb-4">
-                    <span class="program-badge badge-drop-in">Drop-in</span>
-                    <div class="card-body">
-                        <h4 class="card-title">Morning Yoga</h4>
-                        <p class="card-text text-muted">Gentle flow for all levels</p>
-                        <p class="card-text text-muted mt-3">
-                            <i class="far fa-clock me-2"></i>Mon, Wed, Fri 7:00 AM &nbsp;&nbsp; $15/class
-                        </p>
-                        <a href="#" class="btn btn-join mt-3">Join Class</a>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="program-item card mb-4">
+                            <button type="button" class="btn program-badge btn-badge-outline">Drop-in</button>
+                            <div class="card-body">
+                                <h4 class="card-title">Morning Yoga</h4>
+                                <p class="card-text text-muted">Gentle flow for all levels</p>
+                                <p class="card-text text-muted mt-3">
+                                    <i class="far fa-clock me-2"></i>Mon, Wed, Fri 7:00 AM &nbsp;&nbsp; $15/class
+                                </p>
+                                <a href="#" class="btn btn-join mt-3">Join Class</a>
+                            </div>
+                        </div>
 
-                <div class="program-item card mb-4">
-                    <span class="program-badge badge-registered">Registered</span>
-                    <div class="card-body">
-                        <h4 class="card-title">Swim Lessons</h4>
-                        <p class="card-text text-muted">Learn to swim with certified instructors</p>
-                        <p class="card-text text-muted mt-3">
-                            <i class="far fa-clock me-2"></i>Saturdays 10:00 AM &nbsp;&nbsp; $120/month
-                        </p>
-                        <a href="#" class="btn btn-register mt-3">Register Now</a>
-                    </div>
-                </div>
+                        <div class="program-item card mb-4">
+                            <button type="button" class="btn program-badge badge-registered">Registered</button>
+                            <div class="card-body">
+                                <h4 class="card-title">Swim Lessons</h4>
+                                <p class="card-text text-muted">Learn to swim with certified instructors</p>
+                                <p class="card-text text-muted mt-3">
+                                    <i class="far fa-clock me-2"></i>Saturdays 10:00 AM &nbsp;&nbsp; $120/month
+                                </p>
+                                <a href="#" class="btn btn-register mt-3">Register Now</a>
+                            </div>
+                        </div>
 
-                <div class="program-item card mb-4">
-                    <span class="program-badge badge-drop-in">Drop-in</span>
-                    <div class="card-body">
-                        <h4 class="card-title">HIIT Training</h4>
-                        <p class="card-text text-muted">High-intensity interval training</p>
-                        <p class="card-text text-muted mt-3">
-                            <i class="far fa-clock me-2"></i>Tue, Thu 6:00 PM &nbsp;&nbsp; $20/class
-                        </p>
-                        <a href="#" class="btn btn-join mt-3">Join Class</a>
+                        <div class="program-item card mb-4">
+                            <button type="button" class="btn program-badge btn-badge-outline">Drop-in</button>
+                            <div class="card-body">
+                                <h4 class="card-title">HIIT Training</h4>
+                                <p class="card-text text-muted">High-intensity interval training</p>
+                                <p class="card-text text-muted mt-3">
+                                    <i class="far fa-clock me-2"></i>Tue, Thu 6:00 PM &nbsp;&nbsp; $20/class
+                                </p>
+                                <a href="#" class="btn btn-join mt-3">Join Class</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4">
+                        <div class="program-info-card p-4">
+                            <h5 class="text-white">Program Information</h5>
+                            <h6 class="text-white mt-4">Drop-in Classes</h6>
+                            <p class="small text-white-50">No registration required. Pay per class.</p>
+                            <h6 class="text-white mt-4">Registered Programs</h6>
+                            <p class="small text-white-50">Multi-week programs requiring advance registration.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-4">
-                <div class="program-info-card p-4">
-                    <h5 class="text-white">Program Information</h5>
-                    <hr class="text-white-50">
-                    <h6 class="text-white fw-bold">Drop-in Classes</h6>
-                    <p class="small text-white-50">No registration required. [cite_start]Pay per class. [cite: 1]</p>
-                    <h6 class="text-white fw-bold mt-4">Registered Programs</h6>
-                    [cite_start]<p class="small text-white-50">Multi-week programs requiring advance registration. [cite: 1]</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer class="site-footer text-white-50 py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <h5 class="text-white mb-3">Contact Info</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567 </li>
-                    <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@activelife.com </li>
-                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Fitness St, Ottawa, ON </li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@activelife.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Fitness St, Ottawa, ON</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Programs</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Membership</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Schedule</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="text-white mb-3">Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Mon-Fri: 5:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Saturday: 8:00 AM - 8:00 PM</li>
+                        <li class="mb-2">Sunday: 7:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <h5 class="text-white mb-3">Quick Links </h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="footer-link">Programs</a> </li>
-                    <li class="mb-2"><a href="#" class="footer-link">Membership</a> </li>
-                    <li class="mb-2"><a href="#" class="footer-link">Schedule</a> </li>
-                    <li class="mb-2"><a href="#" class="footer-link">About Us</a> </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <h5 class="text-white mb-3">Hours </h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2">Mon-Fri: 5:00 AM - 10:00 PM </li>
-                    <li class="mb-2">Saturday: 8:00 AM - 8:00 PM </li>
-                    <li class="mb-2">Sunday: 7:00 AM - 7:00 PM </li>
-                </ul>
+            <div class="text-center border-top border-secondary pt-4 mt-3">
+                <p class="mb-0">&copy; 2025 Active Life Centre. All rights reserved.</p>
             </div>
         </div>
-        <div class="text-center border-top border-secondary pt-4 mt-3">
-            <p class="mb-0">&copy; 2025 Active Life Centre. All rights reserved. </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

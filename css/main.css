@@ -1,26 +1,17 @@
-/* #hero-home {
-  background-image: url(../images/burner-desktop.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #999;
-}
+/* =============================================
+   ROOT VARIABLES & GLOBAL STYLES
+   ============================================= */
 
-#hero .d-flex {
-  height: 70vh;
-} */
-
-/*--------------------------------------------------------------
-# General & Variables
---------------------------------------------------------------*/
 :root {
-  --primary-color: #007C91; /* Example Blue, adjust to your exact brand color */
-  --secondary-color: #6c757d;
-  --dark-color: #343a40;
-  --light-color: #f8f9fa;
-  --testimonial-bg: #007C91;
+    /* Color Variables */
+    --primary-color: #007C91; /* Main brand color */
+    --secondary-color: #6c757d; /* Secondary color */
+    --dark-color: #343a40; /* Dark color for text */
+    --light-color: #f8f9fa; /* Light background color */
+    --testimonial-bg: #007C91; /* Testimonial section background */
 }
 
+/* Base Styles */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -30,58 +21,80 @@ body {
     padding: 4rem 0;
 }
 
-/*--------------------------------------------------------------
-# Navigation Link States (Active & Hover)
---------------------------------------------------------------*/
+/* =============================================
+   NAVIGATION STYLES
+   ============================================= */
 
-/* This is the style for the link of the page you are currently on */
+/* Active navigation link */
 .navbar .nav-link.active {
-  color: #007C91; /* This sets the text color to blue */
-   font-weight: bold; /* This makes the active link bold */
+    color: #007C91;
+    font-weight: bold;
 }
 
-/* This is the style for when you move your mouse over any nav link */
+/* Navigation link hover state */
 .navbar .nav-link:hover {
-  color: #007C91; /* This sets the text color to blue on hover */
-   font-weight: bold; /* This makes the active link bold */
-  text-decoration: underline; /* This adds the underline on hover */
-  text-underline-offset: 5px; /* Optional: Adds a little space between the text and the line */
+    color: #007C91;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
+
 /*--------------------------------------------------------------
-# Hero Sections
+# Sign In Button Style
 --------------------------------------------------------------*/
+.btn-outline-gray {
+    --custom-green: #8AC926; 
+    border-color: #ced4da;
+}
+
+.btn-outline-gray:hover {
+    color: #ffffff !important;
+    background-color: #8AC926;
+}
+
+/* =============================================
+   HERO SECTIONS
+   ============================================= */
+
+/* Homepage hero section */
 #hero-home {
-    background: linear-gradient(rgba(255, 255, 255, 0.147), rgba(255, 255, 255, 0.179)), url('../images/home_burner_photo.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.147), rgba(255, 255, 255, 0.179)), 
+                url('../images/home_burner_photo.jpg') no-repeat center center/cover;
     padding: 15rem 0;
 }
 
+/* Membership page hero section */
 #hero-membership {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/membership-hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/membership-hero-bg.jpg') no-repeat center center/cover;
     padding: 6rem 0;
 }
 
-/*--------------------------------------------------------------
-# Featured Programs Section
---------------------------------------------------------------*/
+/* =============================================
+   FEATURED PROGRAMS SECTION
+   ============================================= */
+
 #featured-programs {
-    background-color: #fff; /* Ensures the main section background is white */
+    background-color: #fff;
 }
 
+/* Program card styling */
 .program-card {
-    background-color: #F5F5F5; /* Light grey background for the card */
-    border: 1px solid #E5E5E5; /* Subtle border */
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Program card hover effect */
 .program-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-/* Custom button style to match the green outline in your photo */
+/* Custom outline button style */
 .btn-outline-green {
-    --custom-green: #8AC926; /* Define the green color */
+    --custom-green: #8AC926;
     color: #000000;
     border-color: var(--custom-green);
     font-weight: 500;
@@ -93,9 +106,10 @@ body {
     border-color: var(--custom-green);
 }
 
-/*--------------------------------------------------------------
-# Testimonial & CTA Sections
---------------------------------------------------------------*/
+/* =============================================
+   TESTIMONIAL & CTA SECTIONS
+   ============================================= */
+
 #testimonial {
     background-color: var(--testimonial-bg);
 }
@@ -104,22 +118,26 @@ body {
     background-color: var(--primary-color);
 }
 
-/*--------------------------------------------------------------
-# Pricing Cards
---------------------------------------------------------------*/
+/* =============================================
+   PRICING CARDS (MEMBERSHIP PAGE)
+   ============================================= */
+
 .pricing-card {
     border: 1px solid #ddd;
     transition: all 0.3s ease;
 }
+
 .pricing-card .card-header {
     background-color: var(--light-color);
     border-bottom: 1px solid #ddd;
     padding: 1.5rem;
 }
+
 .pricing-card ul li {
     padding-bottom: 1rem;
 }
 
+/* Popular pricing card styling */
 .card-popular {
     border: 2px solid var(--primary-color);
     transform: scale(1.05);
@@ -131,6 +149,8 @@ body {
     color: #fff;
     border-bottom: 1px solid var(--primary-color);
 }
+
+/* "Most Popular" badge */
 .card-popular::before {
     content: 'Most Popular';
     position: absolute;
@@ -145,43 +165,37 @@ body {
     font-weight: bold;
 }
 
+/* =============================================
+   FOOTER STYLES
+   ============================================= */
 
-/*--------------------------------------------------------------
-# Footer Styles
---------------------------------------------------------------*/
 .footer-link {
-    color: rgba(255, 255, 255, 0.5); /* Sets the link color to the same as the text */
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-link:hover {
-    color: #fff; /* Makes the link brighter on hover */
+    color: #fff;
     text-decoration: underline;
 }
 
-/*--------------------------------------------------------------
-# Footer Custom Background
---------------------------------------------------------------*/
 .site-footer {
     background-color: #333333;
 }
 
-/*--------------------------------------------------------------
-# Programs Page Styles (Updated & New)
---------------------------------------------------------------*/
+/* =============================================
+   PROGRAMS PAGE SPECIFIC STYLES
+   ============================================= */
 
-/* Hero section for Programs page */
 #hero-programs {
-  background:url('../images/programs_photo.jpg') no-repeat center center/cover;
-  padding: 7rem 0;
+    background: url('../images/programs_photo.jpg') no-repeat center center/cover;
+    padding: 7rem 0;
 }
 
-/*--------------------------------------------------------------
-# Custom Dropdown Filter
---------------------------------------------------------------*/
+/* Filter dropdown styles */
 .dropdown-menu {
-    width: 100%; /* Make the menu match the button width */
+    width: 100%;
     padding: 0;
     border: 1px solid #D4D4D4;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
@@ -194,16 +208,15 @@ body {
     color: #000000;
 }
 
-/* Style for the links inside the dropdown */
 .dropdown-item {
-    color: #007C91; /* The specific teal color */
+    color: #007C91;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #A3A3A3; /* Separator line */
+    border-bottom: 1px solid #A3A3A3;
     font-weight: 500;
 }
 
 .dropdown-item:last-child {
-    border-bottom: none; /* Remove line from the last item */
+    border-bottom: none;
 }
 
 .dropdown-item:hover {
@@ -211,140 +224,193 @@ body {
     color: #007C91;
 }
 
-/* Filters bar styling */
+/* Filter bar */
 #filters {
-  background-color: #f8f9fa; /* Light grey background */
-  border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
 }
 
-/* Main section with background image */
+/* Program listing section */
 #program-listing-section {
-  background:linear-gradient(rgba(243, 239, 239, 0.152), rgba(243, 239, 239, 0.152)), url('../images/dhats.jpg') no-repeat center center/cover;
-  background-attachment: fixed; /* Optional: Creates a parallax effect */
+    background: linear-gradient(rgba(243, 239, 239, 0.152), rgba(243, 239, 239, 0.152)), 
+                url('../images/dhats.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
 
-/*--------------------------------------------------------------
-# Program Listing Section (Revised)
---------------------------------------------------------------*/
-
-/* Update card style for sharper corners */
+/* Individual program items */
 .program-item.card {
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  position: relative;
-  overflow: hidden;
-  border-radius: none; /* Reduced for a sharper look */
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0; 
 }
 
-/* Sharper corners for badges */
+/* Program badge styling */
 .program-badge {
-    border-radius: 3px; /* Sharper corners */
+    border-radius: 0; 
     position: absolute;
     top: 15px;
     right: 15px;
     padding: 0.4rem 0.7rem;
     font-size: 0.8rem;
     font-weight: 500;
-    color: #c03737;
+    color: #fff;
+    background-color: #007C91;
 }
 
-/* Sharper corners for the info card on the right */
+.program-badge:hover {
+    background-color: #97d4dfe1;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Program info sidebar */
 .program-info-card {
-    background-color: var(--testimonial-teal, #007C91);
-    border-radius: none; /* Sharper corners to match */
+    background-color: var(--testimonial-teal, #007b91ea);
+    border-radius: 0; 
 }
 
-/* Custom button styles to match the image */
+/* Join class button */
 .btn-join {
-    background-color: #8AC926; /* A shade of yellow-green */
+    background-color: #8AC926;
     color: #fff;
     font-weight: 500;
     border: #fff;
-    border-radius: 3px; /* Sharper corners */
-}
-.btn-join:hover {
-    background-color: #fff; /* Darker green on hover */
-    color: #000000;
-    border: #007C91;
+    border-radius: 0 !important; 
 }
 
+.btn-join:hover {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid var(--primary-teal, #007C91); 
+}
+
+/* Register button */
 .btn-register {
-    background-color: #8AC926; /* Standard primary blue */
+    background-color: #8AC926;
     color: #fff;
     font-weight: 500;
     border: none;
-    border-radius: 3px; /* Sharper corners */
+    border-radius: 0 !important; 
 }
+
 .btn-register:hover {
-    background-color: #fff; /* Darker blue on hover */
+    background-color: #fff;
     color: #000000;
+    border: 1px solid var(--primary-teal, #007C91); 
 }
 
 /*--------------------------------------------------------------
-# Membership Plans Section (Revised)
+# Custom Badge Button Style
 --------------------------------------------------------------*/
-#membership-plans {
-    background-color: #6c9ccd;
+.btn-badge-outline {
+    background-color: #fff; 
+    color: var(--text-dark, #212529); 
+    border: 1px solid var(--primary-teal, #007C91); 
+    transition: all 0.3s ease;
 }
+
+.btn-badge-outline:hover {
+    background-color: var(--primary-teal, #007C91); 
+    color: #fff; 
+}
+
+/* =============================================
+   MEMBERSHIP PAGE SPECIFIC STYLES
+   ============================================= */
+
+#hero-membership {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url('../images/membership_photo.jpg') no-repeat center center/cover;
+    padding: 3rem 0;
+}
+
+#membership-plans {
+    background: url('../images/tennis.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding-top: 5rem 0;
+}
+
+/* =============================================
+   PRICING CARDS (MEMBERSHIP PAGE)
+   ============================================= */
 
 .pricing-card {
-    border: 1px solid #8AC926;
-    border-radius: 0.5rem; /* Slightly larger radius */
-    background-color: #fff;
+    background-color: #ffffffee;
     text-align: center;
     position: relative;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
+/* Pricing card header */
 .pricing-card .card-header {
     background: none;
-    border-bottom: 1px solid #dee2e6;
-    padding: 1.5rem;
+    border-bottom: none;
+    padding: 2rem;
     font-size: 1.25rem;
 }
 
+/* Pricing card body */
 .pricing-card .card-body {
     padding: 1.5rem;
 }
 
-/* Added a card-footer for better button alignment */
+/* Pricing card footer */
 .pricing-card .card-footer {
     background: none;
     border: none;
-    padding: 1.5rem;
+    padding: 2.5rem;
     padding-top: 0;
 }
 
-/* .pricing-card ul {
-    padding-left: 0.5rem; /* Aligns list with heading */
-} */
-
+/* Pricing card list items */
 .pricing-card ul li {
     padding-bottom: 1rem;
-    color: #495057; /* Dark grey text for features */
-}
-
-.pricing-card ul .fa-check {
-    color: #000000; /* Green checkmark */
-}
-
-/* Styles for the "Most Popular" card */
-.card-popular {
-    background-color: #81bbc1; /* More precise teal/green */
-    color: #fff;
-    border: none;
-    transform: scale(1.02); /* Subtle pop effect */
-    z-index: 10;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.card-popular ul .fa-check,
-.card-popular ul li {
     color: #000000;
 }
 
-/* Custom Button Styles */
+/* Checkmark icons in pricing cards */
+.pricing-card ul .fa-check {
+    color: #000000;
+}
+
+/* Most Popular card styling */
+.card-popular {
+    border: 2px solid #007C91;
+    transform: scale(1.02);
+    z-index: 10;
+    border-radius: 0;
+}
+
+/* Premium card styling */
+.card-premium {
+    border: 2px solid #8AC926;
+    transform: scale(1.02);
+    z-index: 10;
+    border-radius: 0;
+}
+
+/* Most Popular banner */
+.card-popular::before {
+    content: 'Most Popular';
+    background-color: #007C91;
+    color: white;
+    border-radius: 1px;
+}
+
+/* Standard price text color */
+.text-standard-price {
+    color: #007C91;
+}
+
+/* =============================================
+   MEMBERSHIP BUTTON STYLES
+   ============================================= */
+
+/* Base button styles */
 .btn {
     padding: 0.8rem 1rem;
     font-size: 1rem;
@@ -352,46 +418,54 @@ body {
     border-radius: 0.375rem;
 }
 
+/* Basic and Premium plan buttons */
 .btn-choose-basic,
 .btn-choose-premium {
-    background-color: #f8f9fa; /* Light off-white */
-    border-color: #8AC926; /* Light grey border */
+    background-color: #ffffffca;
+    border: 2px solid #8AC926;
     color: #8AC926;
 }
 
+/* Basic and Premium button hover states */
 .btn-choose-basic:hover,
 .btn-choose-premium:hover {
     background-color: #8AC926;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-.btn-choose-standard {
-    background-color: #007C91; /* Darker teal for the button */
-    border-color: #ffffff;
     color: #fff;
 }
 
+/* Standard plan button */
+.btn-choose-standard {
+    background-color: #007C91;
+    color: #fff;
+}
+
+/* Standard button hover state */
 .btn-choose-standard:hover {
-    background-color: #ffffff; /* Even darker on hover */
-    border-color: #007C91;
+    background-color: #ffffff;
+    border-color: #005f70;
     color: #000000;
 }
 
-/*--------------------------------------------------------------
-# Member Benefits Section
---------------------------------------------------------------*/
+/* =============================================
+   MEMBER BENEFITS SECTION
+   ============================================= */
+
+#member-benefits {
+    background-color: #FAFAFA;
+}
+
+/* Benefit icon styling */
 .benefit-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;       /* Sets the width of the box */
-  height: 50px;      /* Sets the height of the box */
-  flex-shrink: 0;    /* Prevents the box from shrinking */
-  background-color: var(--testimonial-teal, #0d828e); /* Using the same teal color */
-  color: #fff;        /* Makes the icon white */
-  border-radius: 0.5rem; /* Creates the rounded corners */
-  font-size: 1.5rem;   /* Sets the size of the icon inside */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: var(--testimonial-teal, #0d828e);
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .benefit-icon + div h5 {
@@ -400,15 +474,70 @@ body {
 }
 
 /*--------------------------------------------------------------
-# CTA (Call to Action) Section
+# CTA Button Hover Style
 --------------------------------------------------------------*/
-#cta {
-  background-color: var(--testimonial-teal, #0d828e); /* Uses the same teal color */
+#cta .btn-light:hover {
+    background-color: var(--light-green, #8AC926);
+    border-color: var(--light-green, #8AC926);
+    color: #fff;
 }
 
+/* =============================================
+   BUTTON STYLES
+   ============================================= */
 
-#cta .btn-light {
-    padding: 0.8rem 2.5rem; /* Make button wider */
+.btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
     font-weight: 700;
+    border-radius: 0.375rem;
+}
+
+/* Basic membership button */
+.btn-choose-basic,
+.btn-choose-premium {
+    background-color: #ffffffca;
+    border: 2px solid #8AC926;
+    color: #8AC926;
+}
+
+.btn-choose-basic:hover,
+.btn-choose-premium:hover {
+    background-color: #8AC926;
+    color: #fff;
+}
+
+/* Standard membership button */
+.btn-choose-standard {
+    background-color: #007C91;
+    color: #fff;
+}
+
+.btn-choose-standard:hover {
+    background-color: #ffffff;
+    border-color: #005f70;
     color: #000000;
+}
+
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    /* Styles the Sign In / Join Now buttons on mobile */
+    .auth-buttons {
+    display: flex; /* Add this line */
+    justify-content: center;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    /* margin-top: 1px; */
+}
 }
