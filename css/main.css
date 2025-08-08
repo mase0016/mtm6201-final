@@ -4,11 +4,11 @@
 
 :root {
     /* Color Variables */
-    --primary-color: #007C91; /* Main brand color */
-    --secondary-color: #6c757d; /* Secondary color */
-    --dark-color: #343a40; /* Dark color for text */
-    --light-color: #f8f9fa; /* Light background color */
-    --testimonial-bg: #007C91; /* Testimonial section background */
+    --primary-color: #007C91; 
+    --secondary-color: #6c757d; 
+    --dark-color: #343a40; 
+    --light-color: #f8f9fa; 
+    --testimonial-bg: #007C91; 
 }
 
 /* Base Styles */
@@ -103,7 +103,7 @@ body {
 .btn-outline-green:hover {
     color: #000000;
     background-color: var(--custom-green);
-    border-color: var(--custom-green);
+    border-color: #FFFFFF;
 }
 
 /* =============================================
@@ -114,8 +114,15 @@ body {
     background-color: var(--testimonial-bg);
 }
 
+/* This is the new block */
 #cta {
-    background-color: var(--primary-color);
+    background-color: #fff;
+}
+
+.cta-inner {
+    background-color: var(--primary-teal, #007C91); 
+    padding: 3rem;
+    border-radius: 0;
 }
 
 /* =============================================
@@ -330,7 +337,6 @@ body {
 #membership-plans {
     background: url('../images/tennis.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    padding-top: 5rem 0;
 }
 
 /* =============================================
@@ -452,6 +458,12 @@ body {
 
 #member-benefits {
     background-color: #FAFAFA;
+}
+
+.member-benefits-inner {
+    background-color: var(--light-grey, #FAFAFA); 
+    padding: 3rem;
+    border-radius: 0;
 }
 
 /* Benefit icon styling */
